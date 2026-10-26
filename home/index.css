@@ -1,0 +1,188 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.grid-layout {
+    padding: 20px 50px 20px 50px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 19px;
+}
+
+.card {
+    border: 1px solid rgba(128, 128, 128, 0.277);
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.box-img {
+    height: 260px;
+    overflow: hidden;
+}
+
+.box-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-item {
+    width: 100%;
+    height: 200px;
+}
+
+.ratting {
+    display: flex;
+    justify-content: start;
+    color: goldenrod;
+}
+
+.title {
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+.brand {
+    font-size: large;
+}
+
+.btn {
+    border: none;
+    color: white;
+    font-size: 15px;
+    border-radius: 4px;
+    padding: 9px;
+    margin: 5px;
+    background-color: rgba(0, 117, 0, 0.781);
+}
+
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 1000px;
+    padding: 10px;
+    background-color: #6b6a6a;
+}
+
+.nav {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav .tilte {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.nav-left {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Brand {
+    display: inline-block;
+    position: relative;
+}
+
+.Brand-list {
+    background-color: rgb(113, 111, 111);
+    border: 1px solid gainsboro;
+    padding: 10px;
+    display: none;
+    font-size: 20px;
+    margin-top: 10px;
+    position: absolute;
+    z-index: 1;
+}
+
+.brand-btn {
+    border: none;
+    font-size: 20px;
+    font-weight: 900px;
+    background-color: aliceblue;
+}
+
+.Brand:hover .Brand-list {
+    display: block;
+    position: absolute;
+}
+
+.nav-item {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-right {
+    border: none;
+}
+
+.btn-login {
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #bbf7066d;
+}
+
+.btn-register {
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    background-color: #bbf70667;
+}
+
+.icon {
+    position: fixed;
+    margin-left: 10px;
+    border-radius: 3px;
+    background-color: #fff;
+    border: 1px;
+}
+
+.count {
+    position: absolute;
+    top: 3px;
+    font-size: 10px;
+    color: white;
+    justify-content: center;
+    right: 99px;
+    background-color: #fc0303;
+    border-radius: 50px;
+}
+
+.hero-layout {
+    width: 90%;
+    height: 500px;
+    background-color: red;
+    margin: 70px auto;
+}
+
+@media screen and(max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and(min-width: 600px) and (max-width:992px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and(min-width: 993px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
